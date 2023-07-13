@@ -1,127 +1,150 @@
 <template>
-  <section class="landing-section">
-    <div class="row content section-data">
-      <div class="col-12 col-sm-12 col-md-12 col-lg-6 section-text">
-        <h1 class="animated-text">Bring your team together</h1>
-        <p class="animated-text quote-text">
-          At the heart of Slack are channels: organized spaces for everyone and
-          everything you need for work. In channels, it’s easier to connect
-          across departments, offices, time zones and even other companies
-        </p>
+  <div class="main">
+    <section class="landing-section">
+      <div class="row content section-data">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 section-text">
+          <h1 class="animated-text">Made for people.</h1>
+          <p class="animated-text quote-text">
+            At the heart of Slack are channels: organized spaces for everyone
+            and everything you need for work. In channels, it’s easier to
+            connect across departments, offices, time zones and even other
+            companies
+          </p>
+        </div>
+        <video
+          autoplay
+          loop
+          class="col-12 col-sm-12 col-md-12 col-lg-6"
+          style="float:left width:100%; height:500px"
+        >
+          <source src="../images/videos/SlackLanding.webm" type="video/webm" />
+          <source src="../images/videos/SlackLanding.webm" type="video/webm" />
+        </video>
       </div>
-      <video
-        autoplay
-        loop
-        class="col-12 col-sm-12 col-md-12 col-lg-6"
-        style="float:left width:100%; height:500px"
-      >
-        <source src="../images/videos/SlackLanding.webm" type="video/webm" />
-        <source src="../images/videos/SlackLanding.webm" type="video/webm" />
-      </video>
-    </div>
-  </section>
-  <section
-    class="first-section first-section-companies v--borderless section-background-hec bottom-padding"
-  >
-    <p class="display-as-subnav u-text--center">
-      Trusted by companies all over the world
-    </p>
-    <div class="nav-bar-comp-logos u-text--center">
-      <div class="first-section-companies__logos">
-        <div class="logos-bar">
-          <img src="../images/Logos/Airbnb.png" alt="Air BnB" />
+    </section>
+    <section
+      class="first-section first-section-companies v--borderless section-background-hec bottom-padding"
+    >
+      <p class="display-as-subnav u-text--center">
+        Trusted by companies all over the world
+      </p>
+      <div class="nav-bar-comp-logos u-text--center">
+        <div class="first-section-companies__logos">
+          <div class="logos-bar">
+            <img src="../images/Logos/Airbnb.png" alt="Air BnB" />
+          </div>
+          <div class="logos-bar">
+            <img src="../images/Logos/AdobePS.png" alt="Adobe PhotoShop" />
+          </div>
+          <div class="logos-bar">
+            <img src="../images/Logos/NASA.png" alt="NASA" />
+          </div>
+          <div class="logos-bar">
+            <img src="../images/Logos/etsy.png" alt="Etsy" />
+          </div>
+          <div class="logos-bar">
+            <img
+              src="../images/Logos/newyorktimes.png"
+              alt="The New York Times"
+            />
+          </div>
+          <div class="logos-bar">
+            <img src="../images/Logos/uber.png" alt="Uber" />
+          </div>
         </div>
-        <div class="logos-bar">
-          <img src="../images/Logos/AdobePS.png" alt="Adobe PhotoShop" />
-        </div>
-        <div class="logos-bar">
-          <img src="../images/Logos/NASA.png" alt="NASA" />
-        </div>
-        <div class="logos-bar">
-          <img src="../images/Logos/etsy.png" alt="Etsy" />
-        </div>
-        <div class="logos-bar">
-          <img
-            src="../images/Logos/newyorktimes.png"
-            alt="The New York Times"
+      </div>
+    </section>
+
+    <section class="second-section section-background-hec">
+      <div class="row content section-data">
+        <video
+          autoplay
+          loop
+          class="col-12 col-sm-12 col-md-12 col-lg-6"
+          style="float:left width:100%; height:400px"
+        >
+          <source
+            src="../images/videos/slackPromovideo.webm"
+            type="video/webm"
           />
+          <source
+            src="../images/videos/slackPromovideo.webm"
+            type="video/webm"
+          />
+        </video>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 section-text">
+          <h1 class="animated-text">Bring your team together</h1>
+          <p class="animated-text quote-text">
+            At the heart of Slack are channels: organized spaces for everyone
+            and everything you need for work. In channels, it’s easier to
+            connect across departments, offices, time zones and even other
+            companies
+          </p>
         </div>
-        <div class="logos-bar">
-          <img src="../images/Logos/uber.png" alt="Uber" />
+      </div>
+    </section>
+
+    <section class="second-section section-background-hec">
+      <div class="row content section-data">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 section-text">
+          <h1 class="animated-text">Choose how you want to work</h1>
+          <p class="animated-text quote-text">
+            In Slack, you’ve got all the flexibility to work when, where and how
+            it’s best for you. You can easily chat, send audio and video clips,
+            or hop on a huddle to talk things out live.
+          </p>
+        </div>
+        <video
+          autoplay
+          loop
+          class="col-12 col-sm-12 col-md-12 col-lg-6"
+          style="float:left width:100%; height:400px"
+        >
+          <source src="../images/videos/slackChoose.webm" type="video/webm" />
+          <source src="../images/videos/slackChoose.webm" type="video/webm" />
+        </video>
+      </div>
+    </section>
+
+    <section class="second-section section-background-hec">
+      <div class="row content section-data">
+        <video
+          autoplay
+          loop
+          class="col-12 col-sm-12 col-md-12 col-lg-6"
+          style="float:left width:100%; height:400px"
+        >
+          <source
+            src="../images/videos/slackMovefaster.webm"
+            type="video/webm"
+          />
+          <source
+            src="../images/videos/slackMovefaster.webm"
+            type="video/webm"
+          />
+        </video>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 section-text">
+          <h1 class="animated-text">
+            Move faster with your tools in one place
+          </h1>
+          <p class="animated-text quote-text">
+            Automate away routine tasks with the power of generative AI and
+            simplify your workflow with all your favorite apps ready to go in
+            Slack
+          </p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="second-section section-background-hec">
-    <div class="row content section-data">
-      <video
-        autoplay
-        loop
-        class="col-12 col-sm-12 col-md-12 col-lg-6"
-        style="float:left width:100%; height:400px"
-      >
-        <source src="../images/videos/slackPromovideo.webm" type="video/webm" />
-        <source src="../images/videos/slackPromovideo.webm" type="video/webm" />
-      </video>
-      <div class="col-12 col-sm-12 col-md-12 col-lg-6 section-text">
-        <h1 class="animated-text">Bring your team together</h1>
-        <p class="animated-text quote-text">
-          At the heart of Slack are channels: organized spaces for everyone and
-          everything you need for work. In channels, it’s easier to connect
-          across departments, offices, time zones and even other companies
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="second-section section-background-hec">
-    <div class="row content section-data">
-      <div class="col-12 col-sm-12 col-md-12 col-lg-6 section-text">
-        <h1 class="animated-text">Choose how you want to work</h1>
-        <p class="animated-text quote-text">
-          In Slack, you’ve got all the flexibility to work when, where and how
-          it’s best for you. You can easily chat, send audio and video clips, or
-          hop on a huddle to talk things out live.
-        </p>
-      </div>
-      <video
-        autoplay
-        loop
-        class="col-12 col-sm-12 col-md-12 col-lg-6"
-        style="float:left width:100%; height:400px"
-      >
-        <source src="../images/videos/slackChoose.webm" type="video/webm" />
-        <source src="../images/videos/slackChoose.webm" type="video/webm" />
-      </video>
-    </div>
-  </section>
-
-  <section class="second-section section-background-hec">
-    <div class="row content section-data">
-      <video
-        autoplay
-        loop
-        class="col-12 col-sm-12 col-md-12 col-lg-6"
-        style="float:left width:100%; height:400px"
-      >
-        <source src="../images/videos/slackMovefaster.webm" type="video/webm" />
-        <source src="../images/videos/slackMovefaster.webm" type="video/webm" />
-      </video>
-      <div class="col-12 col-sm-12 col-md-12 col-lg-6 section-text">
-        <h1 class="animated-text">Move faster with your tools in one place</h1>
-        <p class="animated-text quote-text">
-          Automate away routine tasks with the power of generative AI and
-          simplify your workflow with all your favorite apps ready to go in
-          Slack
-        </p>
-      </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
 
 <script></script>
 <style>
+/* Main div Css*/
+.main {
+  width: 100%;
+  height: auto;
+}
 /* Section Nav */
 .landing-section .section-nav {
   background-color: purple;

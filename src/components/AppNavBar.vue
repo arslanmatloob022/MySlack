@@ -1,6 +1,9 @@
 <template>
-  <nav class="row navbar navbar-expand-md navbar-dark">
-    <a class="col-2 logo-nav">
+  <nav
+    class="row navbar navbar-expand-md navbar-dark"
+    :class="{ show: isMenuOpen, exapanded: isNavbarExpanded }"
+  >
+    <a class="col-lg-2 col-sm-4 col-4 logo-nav">
       <img
         src="../images/Logos/slackProLogo.png"
         alt=""
@@ -8,7 +11,10 @@
       />
       <h1>Slack</h1>
     </a>
-    <div class="col-6 collapse navbar-collapse" :class="{ show: isMenuOpen }">
+    <div
+      class="col-lg-6 col-6 collapse navbar-collapse"
+      :class="{ show: isMenuOpen }"
+    >
       <ul class="navbar-nav">
         <li class="nav-item">
           <a
@@ -66,7 +72,7 @@
       type="button"
       @click="toggleMenu"
     >
-      <span class="uil uil-bars"></i></span>
+      <i class="uil uil-bars"></i>
     </button>
   </nav>
 </template>
@@ -77,6 +83,7 @@ export default {
     return {
       isMenuOpen: false,
       showDropdown: false,
+      isNavbarExpanded: false,
       Featuresarrow: "&#11167;",
       Solutionsarrow: "&#11167;",
       Resourcesarrow: "&#11167;",
@@ -85,6 +92,7 @@ export default {
   methods: {
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
+      this.isNavbarExpanded = !this.isNavbarExpanded;
     },
     toggleFeaturesDropdown() {
       this.showFeaturesDropdown = !this.showFeaturesDropdown;
@@ -138,6 +146,7 @@ export default {
 .navbar-nav .nav-item {
   display: flex;
   align-items: center;
+  transition: all 0.9s ease;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -157,7 +166,6 @@ export default {
   cursor: pointer;
   color: #f4ede4;
 }
-
 .navbar-buttons a {
   text-decoration: none;
   color: #f4ede4;
@@ -176,6 +184,7 @@ export default {
   border-radius: 5px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
+  transition: all 0.5s ease;
 }
 
 .navbar-buttons .navButtons:hover {
@@ -197,28 +206,41 @@ export default {
 }
 
 @media (max-width: 767px) {
+  .exapanded {
+    height: 326px;
+    transition: all 0.5s ease;
+  }
   .navbar .navbar-nav {
     flex-direction: column;
   }
 
   .navbar-toggler {
-    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    padding: 8px;
+    transition: all 0.6s ease;
   }
 
   .navbar-nav .nav-item {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    transition: all 0.7s ease;
   }
 
   .navbar-nav .nav-link {
+    transition: all 0.6s ease;
     padding-left: 0;
   }
 
   .ml-auto {
+    transition: all 0.6s ease;
     margin-left: auto !important;
   }
-  .col-4 {
-    display: none;
-  }
+
   .navbar-buttons {
     display: none;
   }
