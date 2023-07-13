@@ -1,15 +1,35 @@
 <template>
   <div class="main">
     <section class="landing-section">
-      <div class="row content section-data">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-6 section-text">
-          <h1 class="animated-text">Made for people.</h1>
-          <p class="animated-text quote-text">
-            At the heart of Slack are channels: organized spaces for everyone
-            and everything you need for work. In channels, it’s easier to
-            connect across departments, offices, time zones and even other
-            companies
-          </p>
+      <div class="row content section-data purple-section">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+          <div class="row">
+            <div class="col-lg-12 landing-headings">
+              <h1 class="first-heading">Made for people.</h1>
+              <span
+                ><h1 class="second-heading">Built for productivity.</h1></span
+              >
+            </div>
+          </div>
+          <div class="row purple-text">
+            <div class="col-lg-10">
+              <p class="quote-text">
+                Connect the right people, find anything you need and automate
+                the rest. That’s work in Slack, your productivity platform.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 purple-buttons">
+              <Button class="col-lg-5 email-signup-button"
+                >SIGN UP WITH EMAIL</Button
+              >
+              <Button class="col-lg-5 google-signup-button"
+                ><span><i class="uil uil-google"></i></span>SIGN UP WITH
+                Google</Button
+              >
+            </div>
+          </div>
         </div>
         <video
           autoplay
@@ -139,7 +159,52 @@
 </template>
 
 <script></script>
-<style>
+<style scoped>
+/*purple landing section*/
+.purple-section {
+  display: flex;
+  align-items: center;
+}
+.landing-headings .first-heading {
+  color: #f4ede4;
+  font-size: 52px;
+  font-weight: 900;
+}
+.landing-headings .second-heading {
+  color: orange;
+  font-size: 52px;
+  font-weight: 900;
+}
+.purple-text {
+  display: flex;
+  justify-content: center;
+
+  color: #f4ede4;
+}
+.purple-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.purple-buttons button {
+  padding: 12px 10px;
+  border: 2px solid #f4ede4;
+  border-radius: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+.email-signup-button {
+  color: rgb(116, 1, 116);
+  background-color: #f4ede4;
+}
+.google-signup-button {
+  color: #f4ede4;
+  background-color: rgb(56, 166, 235);
+}
+.google-signup-button i {
+  margin-right: 8px;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+}
 /* Main div Css*/
 .main {
   width: 100%;
