@@ -184,7 +184,6 @@ export default {
   border-radius: 5px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
-  transition: all 0.5s ease;
 }
 
 .navbar-buttons .navButtons:hover {
@@ -199,6 +198,15 @@ export default {
 .navbar-buttons #tryBtn {
   color: rgb(116, 1, 116);
   background-color: #f4ede4;
+}
+@media screen and (min-width: 992px) and (max-width: 1440px) {
+  .navbar-buttons .navButtons {
+    font-size: calc(0.875rem + (0 * (100vw - 400px) / 624));
+    padding-left: calc(0.975rem + (0 * (100vw - 400px) / 624));
+    padding-right: calc(0.975rem + (0 * (100vw - 400px) / 624));
+    padding-top: calc(0.675rem + (0 * (100vw - 400px) / 624));
+    padding-bottom: calc(0.675rem + (0 * (100vw - 400px) / 624));
+  }
 }
 
 .navbar-toggler-icon {
@@ -232,12 +240,10 @@ export default {
   }
 
   .navbar-nav .nav-link {
-    transition: all 0.6s ease;
     padding-left: 0;
   }
 
   .ml-auto {
-    transition: all 0.6s ease;
     margin-left: auto !important;
   }
 
