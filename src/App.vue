@@ -7,17 +7,20 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav> -->
+  <app-footer></app-footer>
   <router-view />
 </template>
 <script>
 import AppNavBar from "./components/AppNavBar.vue";
 import AppLandingView from "./views/AppLandingView.vue";
 import LandingPageEndContent from "./components/LandingPageEndContent.vue";
+import AppFooter from "./components/AppFooter.vue";
 export default {
   components: {
     LandingPageEndContent,
     AppNavBar,
     AppLandingView,
+    AppFooter,
   },
 };
 </script>
