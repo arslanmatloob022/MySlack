@@ -8,12 +8,12 @@
     </div>
 
     <div class="footerMenu row">
-      <div class="col-lg-2 col-md-4 col-sm-6 footerLogo">
+      <div class="col-lg-2 col-md-4 col-sm-12 col-12 footerLogo">
         <img src="../images/Logos/slackProLogo.png" />
       </div>
 
       <!-- Why Slack section -->
-      <div class="col-lg-2 col-md-4 col-sm-6 menuText">
+      <div class="col-lg-2 col-md-4 col-sm-6 col-6 menuText">
         <div class="row">
           <h6 class="col-lg-12 footHeading">WHY SLACK?</h6>
         </div>
@@ -31,7 +31,7 @@
         </div>
       </div>
       <!-- Product Line -->
-      <div class="col-lg-2 col-md-4 col-sm-6 menuText">
+      <div class="col-lg-2 col-md-4 col-sm-6 col-6 menuText">
         <div class="row">
           <h6 class="col-lg-12 footHeading">PRODUCT</h6>
         </div>
@@ -46,21 +46,8 @@
         </div>
       </div>
 
-      <!-- Pricing section -->
-      <div class="col-lg-2 col-md-4 col-sm-6 menuText">
-        <div class="row">
-          <h6 class="col-lg-12 footHeading">PRICING</h6>
-        </div>
-        <div class="row">
-          <p class="col-lg-12">Plans</p>
-        </div>
-        <div class="row">
-          <p class="col-lg-12">Paid vs. Free</p>
-        </div>
-      </div>
-
       <!-- Resources List -->
-      <div class="col-lg-2 col-md-4 col-sm-6 menuText">
+      <div class="col-lg-2 col-md-4 col-sm-6 col-6 menuText">
         <div class="row">
           <h6 class="col-lg-12 footHeading">RESOURCES</h6>
         </div>
@@ -87,7 +74,7 @@
         </div>
       </div>
       <!-- Company Section -->
-      <div class="col-lg-2 col-md-4 col-sm-6 menuText">
+      <div class="col-lg-2 col-md-4 col-sm-6 col-6 menuText">
         <div class="row">
           <h6 class="col-lg-12 footHeading">COMPANY</h6>
         </div>
@@ -107,6 +94,19 @@
           <p class="col-lg-12">Careers</p>
         </div>
       </div>
+
+      <!-- Pricing section -->
+      <div class="col-lg-2 col-md-4 col-sm-6 col-6 menuText">
+        <div class="row">
+          <h6 class="col-lg-12 footHeading">PRICING</h6>
+        </div>
+        <div class="row">
+          <p class="col-lg-12">Plans</p>
+        </div>
+        <div class="row">
+          <p class="col-lg-12">Paid vs. Free</p>
+        </div>
+      </div>
     </div>
   </section>
   <section class="footerRibbon row">
@@ -124,7 +124,7 @@
     </div>
     <div class="col-lg-3 col-md-6 col-sm-6 col-6 ribbonSection">
       <i class="uil uil-phone"></i>
-      <a href="callto:+92 300 76626555 ">Phone Number</a>
+      <a href="tel:+9230076626555 ">Phone Number</a>
     </div>
   </section>
 </template>
@@ -186,6 +186,7 @@ export default {
   font-weight: bold;
 }
 .menuText {
+  margin-top: 10px;
   text-align: left;
 }
 .menuText .row p {
@@ -196,8 +197,7 @@ export default {
 /* footer ribbon styling*/
 .footerRibbon {
   background-color: whitesmoke;
-  width: 100%;
-  height: 40px;
+  height: auto;
 }
 .ribbonSection {
   display: flex;

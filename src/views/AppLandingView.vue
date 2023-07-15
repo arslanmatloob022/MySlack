@@ -1,203 +1,185 @@
 <template>
-  <div class="main">
-    <section class="landing-section">
-      <div class="row content section-data purple-section">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-12 landing-headings">
-              <h1 class="first-heading">Made for people.</h1>
-              <span
-                ><h1 class="second-heading">Built for productivity.</h1></span
-              >
-            </div>
+  <!-- First Purple Section -->
+  <section class="landing-section">
+    <div class="row content section-data purple-section">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-12 landing-headings">
+            <h1 class="first-heading">Made for people.</h1>
+            <span><h1 class="second-heading">Built for productivity.</h1></span>
           </div>
-          <div class="row purple-text">
-            <div class="col-lg-10 col-md-10 col-sm-10 col-10">
-              <p class="quote-text">
-                Connect the right people, find anything you need and automate
-                the rest. That’s work in Slack, your productivity platform.
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-12 purple-buttons">
-              <Button
-                class="col-lg-5 col-md-6 col-sm-12 col-12 email-signup-button"
-                >SIGN UP WITH EMAIL</Button
-              >
-              <Button
-                class="col-lg-5 col-md-6 col-sm-12 col-12 google-signup-button"
-                ><span><i class="uil uil-google"></i></span>SIGN UP WITH
-                Google</Button
-              >
-            </div>
-          </div>
-          <div class="row purple-text">
+        </div>
+        <div class="row purple-text">
+          <div class="col-lg-10 col-md-12 col-sm-12 col-12">
             <p class="quote-text">
-              Slack is free to try for as long as you’d like
+              Connect the right people, find anything you need and automate the
+              rest. That’s work in Slack, your productivity platform.
             </p>
           </div>
         </div>
-        <video
-          autoplay
-          loop
-          class="col-12 col-sm-12 col-md-12 col-lg-6"
-          style="float:left width:100%; height:500px"
-        >
-          <source src="../images/videos/SlackLanding.webm" type="video/webm" />
-          <source src="../images/videos/SlackLanding.webm" type="video/webm" />
-        </video>
-      </div>
-    </section>
-
-    <!-- Sales Comapnies Section -->
-    <section
-      class="first-section first-section-companies v--borderless section-background-hec bottom-padding"
-    >
-      <p class="display-as-subnav u-text--center">
-        Trusted by companies all over the world
-      </p>
-      <div class="nav-bar-comp-logos u-text--center">
-        <div class="first-section-companies__logos">
-          <div class="logos-bar">
-            <img src="../images/Logos/Airbnb.png" alt="Air BnB" />
-          </div>
-          <div class="logos-bar">
-            <img src="../images/Logos/AdobePS.png" alt="Adobe PhotoShop" />
-          </div>
-          <div class="logos-bar">
-            <img src="../images/Logos/NASA.png" alt="NASA" />
-          </div>
-          <div class="logos-bar">
-            <img src="../images/Logos/etsy.png" alt="Etsy" />
-          </div>
-          <div class="logos-bar">
-            <img
-              src="../images/Logos/newyorktimes.png"
-              alt="The New York Times"
-            />
-          </div>
-          <div class="logos-bar">
-            <img src="../images/Logos/uber.png" alt="Uber" />
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-12 purple-buttons">
+            <Button
+              class="col-lg-5 col-md-6 col-sm-12 col-12 email-signup-button"
+              >SIGN UP WITH EMAIL</Button
+            >
+            <Button
+              class="col-lg-5 col-md-6 col-sm-12 col-12 google-signup-button"
+              ><span><i class="uil uil-google"></i></span>SIGN UP WITH
+              Google</Button
+            >
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="second-section section-background-hec">
-      <div class="row content section-data">
-        <video
-          autoplay
-          loop
-          class="col-12 col-sm-12 col-md-12 col-lg-6"
-          style="float:left width:100%; height:400px"
-        >
-          <source
-            src="../images/videos/slackMovefaster.webm"
-            type="video/webm"
-          />
-          <source
-            src="../images/videos/slackMovefaster.webm"
-            type="video/webm"
-          />
-        </video>
-        <div class="col-12 col-sm-12 col-md-12 col-lg-6 section-text">
-          <h1 class="animated-text">
-            Move faster with your tools in one place
-          </h1>
-          <p class="animated-text quote-text">
-            Automate away routine tasks with the power of generative AI and
-            simplify your workflow with all your favorite apps ready to go in
-            Slack
-          </p>
-          <p
-            class="link-text"
-            @mouseover="startUnderlineAnimation(1)"
-            @mouseleave="stopUnderlineAnimation(1)"
-          >
-            Learn more about the Slack Plateform.<span>&#x2192;</span>
-            <span
-              class="underline"
-              :class="{ 'underline-animate': animateUnderline[1] }"
-            ></span>
+        <div class="row purple-text">
+          <p class="quote-text">
+            Slack is free to try for as long as you’d like
           </p>
         </div>
       </div>
-    </section>
+      <video
+        autoplay
+        loop
+        class="col-12 col-sm-12 col-md-12 col-lg-6"
+        style="float:left width:100%; height:500px"
+      >
+        <source src="../images/videos/SlackLanding.webm" type="video/webm" />
+        <source src="../images/videos/SlackLanding.webm" type="video/webm" />
+      </video>
+    </div>
+  </section>
 
-    <section class="second-section section-background-hec">
-      <div class="row content section-data">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-6 section-text">
-          <h1 class="animated-text">Choose how you want to work</h1>
-          <p class="animated-text quote-text">
-            In Slack, you’ve got all the flexibility to work when, where and how
-            it’s best for you. You can easily chat, send audio and video clips,
-            or hop on a huddle to talk things out live.
-          </p>
-          <p
-            class="link-text"
-            @mouseover="startUnderlineAnimation(2)"
-            @mouseleave="stopUnderlineAnimation(2)"
-          >
-            Learn more about Flexible Communication<span>&#x2192;</span>
-            <span
-              class="underline"
-              :class="{ 'underline-animate': animateUnderline[2] }"
-            ></span>
-          </p>
+  <!-- Sales Comapnies Section -->
+  <section
+    class="first-section first-section-companies v--borderless section-background-hec bottom-padding"
+  >
+    <p class="display-as-subnav u-text--center">
+      Trusted by companies all over the world
+    </p>
+    <div class="nav-bar-comp-logos u-text--center">
+      <div class="row first-section-companies__logos">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-4 logos-bar">
+          <img src="../images/Logos/Airbnb.png" alt="Air BnB" />
         </div>
-        <video
-          autoplay
-          loop
-          class="col-12 col-sm-12 col-md-12 col-lg-6"
-          style="float:left width:100%; height:400px"
-        >
-          <source src="../images/videos/slackChoose.webm" type="video/webm" />
-          <source src="../images/videos/slackChoose.webm" type="video/webm" />
-        </video>
-      </div>
-    </section>
-
-    <section class="second-section section-background-hec">
-      <div class="row content section-data">
-        <video
-          autoplay
-          loop
-          class="col-12 col-sm-12 col-md-12 col-lg-6"
-          style="float:left width:100%; height:400px"
-        >
-          <source
-            src="../images/videos/slackPromovideo.webm"
-            type="video/webm"
+        <div class="col-lg-2 col-md-4 col-sm-4 col-4 logos-bar">
+          <img src="../images/Logos/AdobePS.png" alt="Adobe PhotoShop" />
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-4 col-4 logos-bar">
+          <img src="../images/Logos/NASA.png" alt="NASA" />
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-4 col-4 logos-bar">
+          <img src="../images/Logos/etsy.png" alt="Etsy" />
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-4 col-4 logos-bar">
+          <img
+            src="../images/Logos/newyorktimes.png"
+            alt="The New York Times"
           />
-          <source
-            src="../images/videos/slackPromovideo.webm"
-            type="video/webm"
-          />
-        </video>
-        <div class="col-12 col-sm-12 col-md-12 col-lg-6 section-text">
-          <h1 class="animated-text">Bring your team together</h1>
-          <p class="animated-text quote-text">
-            At the heart of Slack are channels: organized spaces for everyone
-            and everything you need for work. In channels, it’s easier to
-            connect across departments, offices, time zones and even other
-            companies
-          </p>
-          <p
-            class="link-text"
-            @mouseover="startUnderlineAnimation(3)"
-            @mouseleave="stopUnderlineAnimation(3)"
-          >
-            Learn more about Channels<span>&#x2192;</span>
-            <span
-              class="underline"
-              :class="{ 'underline-animate': animateUnderline[3] }"
-            ></span>
-          </p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-4 col-4 logos-bar">
+          <img src="../images/Logos/uber.png" alt="Uber" />
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
+
+  <section class="second-section section-background-hec">
+    <div class="row content section-data">
+      <video
+        autoplay
+        loop
+        class="col-12 col-sm-12 col-md-12 col-lg-6"
+        style="float:left width:100%; height:400px"
+      >
+        <source src="../images/videos/slackMovefaster.webm" type="video/webm" />
+        <source src="../images/videos/slackMovefaster.webm" type="video/webm" />
+      </video>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-6 section-text">
+        <h1 class="animated-text">Move faster with your tools in one place</h1>
+        <p class="animated-text quote-text">
+          Automate away routine tasks with the power of generative AI and
+          simplify your workflow with all your favorite apps ready to go in
+          Slack
+        </p>
+        <p
+          class="link-text"
+          @mouseover="startUnderlineAnimation(1)"
+          @mouseleave="stopUnderlineAnimation(1)"
+        >
+          Learn more about the Slack Plateform.<span>&#x2192;</span>
+          <span
+            class="underline"
+            :class="{ 'underline-animate': animateUnderline[1] }"
+          ></span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="second-section section-background-hec">
+    <div class="row content section-data">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-6 section-text">
+        <h1 class="animated-text">Choose how you want to work</h1>
+        <p class="animated-text quote-text">
+          In Slack, you’ve got all the flexibility to work when, where and how
+          it’s best for you. You can easily chat, send audio and video clips, or
+          hop on a huddle to talk things out live.
+        </p>
+        <p
+          class="link-text"
+          @mouseover="startUnderlineAnimation(2)"
+          @mouseleave="stopUnderlineAnimation(2)"
+        >
+          Learn more about Flexible Communication<span>&#x2192;</span>
+          <span
+            class="underline"
+            :class="{ 'underline-animate': animateUnderline[2] }"
+          ></span>
+        </p>
+      </div>
+      <video
+        autoplay
+        loop
+        class="col-12 col-sm-12 col-md-12 col-lg-6"
+        style="float:left width:100%; height:400px"
+      >
+        <source src="../images/videos/slackChoose.webm" type="video/webm" />
+        <source src="../images/videos/slackChoose.webm" type="video/webm" />
+      </video>
+    </div>
+  </section>
+
+  <section class="second-section section-background-hec">
+    <div class="row content section-data">
+      <video
+        autoplay
+        loop
+        class="col-12 col-sm-12 col-md-12 col-lg-6"
+        style="float:left width:100%; height:400px"
+      >
+        <source src="../images/videos/slackPromovideo.webm" type="video/webm" />
+        <source src="../images/videos/slackPromovideo.webm" type="video/webm" />
+      </video>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-6 section-text">
+        <h1 class="animated-text">Bring your team together</h1>
+        <p class="animated-text quote-text">
+          At the heart of Slack are channels: organized spaces for everyone and
+          everything you need for work. In channels, it’s easier to connect
+          across departments, offices, time zones and even other companies
+        </p>
+        <p
+          class="link-text"
+          @mouseover="startUnderlineAnimation(3)"
+          @mouseleave="stopUnderlineAnimation(3)"
+        >
+          Learn more about Channels<span>&#x2192;</span>
+          <span
+            class="underline"
+            :class="{ 'underline-animate': animateUnderline[3] }"
+          ></span>
+        </p>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -246,6 +228,8 @@ export default {
   margin-top: 10px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   color: #f4ede4;
 }
 .purple-buttons button {
@@ -282,10 +266,6 @@ export default {
   }
 }
 /* Main div Css*/
-.main {
-  width: 100%;
-  height: auto;
-}
 /* Section Nav */
 .landing-section .section-nav {
   background-color: purple;
@@ -419,11 +399,12 @@ p {
 
 /* Text Animatiions*/
 .quote-text {
-  width: 80%;
+  width: 100%;
   overflow: auto;
   word-wrap: break-word;
 }
 .animated-text {
+  margin-top: 20px;
   animation: text-animation 3s;
 }
 

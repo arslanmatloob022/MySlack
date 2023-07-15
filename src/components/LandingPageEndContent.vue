@@ -11,17 +11,27 @@
       </div>
     </div>
     <div class="row states">
-      <div class="col-lg-4 col-md-4 col-sm-6 col-12 statesHeading">
-        <h1>85%</h1>
-        <p>of users say Slack has improved communication</p>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+        <div class="statesHeading">
+          <h1>85%</h1>
+          <p class="quote-texts">
+            of users say Slack has improved communication
+          </p>
+        </div>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-6 col-12 statesHeading">
-        <h1>86%</h1>
-        <p>feel their ability to work remotely has improved*</p>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+        <div class="statesHeading">
+          <h1>86%</h1>
+          <p class="quote-texts">
+            feel their ability to work remotely has improved*
+          </p>
+        </div>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-6 col-12 statesHeading">
-        <h1>88%</h1>
-        <p>feel more connected to their teams</p>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+        <div class="statesHeading">
+          <h1>88%</h1>
+          <p class="quote-texts">feel more connected to their teams</p>
+        </div>
       </div>
     </div>
   </section>
@@ -128,9 +138,13 @@ export default {
 }
 .statesHeading {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   color: purple;
+}
+.statesHeading .quote-texts {
+  display: flexbox;
 }
 .statesHeading h1 {
   font-size: 66px;
@@ -178,14 +192,15 @@ export default {
   justify-content: space-between;
 }
 .quote-text {
-  font-size: 26px;
+  margin-top: 10px;
+  font-size: calc(16px + 1vw);
   font-family: "Times New Roman", Times, serif;
 }
 .content video {
   height: 100%;
   float: left;
   width: 100%;
-  border-radius: 0px 150px 150px 0px;
+  border-radius: 0px 200px 200px 0px;
 }
 .section-background-hec {
   background-color: #faf1e5 !important;
