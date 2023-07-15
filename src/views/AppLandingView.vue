@@ -22,11 +22,11 @@
           <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-12 purple-buttons">
               <Button
-                class="col-lg-5 col-md-12 col-sm-12 col-12 email-signup-button"
+                class="col-lg-5 col-md-6 col-sm-12 col-12 email-signup-button"
                 >SIGN UP WITH EMAIL</Button
               >
               <Button
-                class="col-lg-5 col-md-12 col-sm-12 col-12 google-signup-button"
+                class="col-lg-5 col-md-6 col-sm-12 col-12 google-signup-button"
                 ><span><i class="uil uil-google"></i></span>SIGN UP WITH
                 Google</Button
               >
@@ -201,8 +201,12 @@
 </template>
 
 <script>
+import TrySalesButtonsVue from "@/components/Buttons.vue/TrySalesButtons.vue";
 export default {
   name: "AppLandingView",
+  components: {
+    TrySalesButtonsVue,
+  },
   data() {
     return {
       animateUnderline: {
@@ -269,6 +273,9 @@ export default {
   font-size: 12px;
 }
 @media screen and (max-width: 992px) {
+  .purple-buttons {
+    margin-left: 14px;
+  }
   .google-signup-button {
     margin-left: 0px;
     margin-top: 10px;

@@ -12,7 +12,7 @@
       <h1>Slack</h1>
     </a>
     <div
-      class="col-lg-6 col-6 collapse navbar-collapse"
+      class="col-lg-6 col-md-6 col-sm-6 col-6 collapse navbar-collapse"
       :class="{ show: isMenuOpen }"
     >
       <ul class="navbar-nav">
@@ -58,13 +58,12 @@
         </li>
       </ul>
     </div>
-    <div class="col-4 navbar-buttons">
+    <div class="col-lg-4 col-md-6 col-sm-6 col-4 navbar-buttons">
       <i class="uil uil-search"></i>
       <a class="navbtn-signin">
         <P>Sign in</P>
       </a>
-      <button class="navButtons" id="salesBtn">TALK TO SALES</button>
-      <button class="navButtons" id="tryBtn">TRY FOR FREE</button>
+      <try-sales-buttons-vue class="nav-Buttons"></try-sales-buttons-vue>
     </div>
     <button
       class="navbar-toggler"
@@ -78,7 +77,12 @@
 </template>
 
 <script>
+import TrySalesButtonsVue from "./Buttons.vue/TrySalesButtons.vue";
 export default {
+  name: "AppNavBar",
+  components: {
+    TrySalesButtonsVue,
+  },
   data() {
     return {
       isMenuOpen: false,
@@ -178,39 +182,16 @@ export default {
   outline: none;
 }
 
-.navbar-buttons .navButtons {
-  padding: 8px 12px;
-  border: 2px solid #f4ede4;
-  border-radius: 5px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 600;
-}
-
-.navbar-buttons .navButtons:hover {
-  transform: scale(1.02);
-}
-
-.navbar-buttons #salesBtn {
-  background-color: transparent;
-  color: #f4ede4;
-}
-
-.navbar-buttons #tryBtn {
-  color: rgb(116, 1, 116);
-  background-color: #f4ede4;
-}
-@media screen and (min-width: 992px) and (max-width: 1440px) {
-  .navbar-buttons .navButtons {
-    font-size: calc(0.875rem + (0 * (100vw - 400px) / 624));
-    padding-left: calc(0.975rem + (0 * (100vw - 400px) / 624));
-    padding-right: calc(0.975rem + (0 * (100vw - 400px) / 624));
-    padding-top: calc(0.675rem + (0 * (100vw - 400px) / 624));
-    padding-bottom: calc(0.675rem + (0 * (100vw - 400px) / 624));
-  }
-}
-
 .navbar-toggler-icon {
   background-color: white;
+}
+@media (min-width: 768px) and (max-width: 1060px) {
+  .navbar-nav {
+    display: none;
+  }
+  .nav-Buttons {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
