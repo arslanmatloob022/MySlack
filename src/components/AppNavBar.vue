@@ -78,7 +78,6 @@
       <i class="uil uil-bars"></i>
     </button>
   </nav>
-  <div id="mapSection"></div>
 </template>
 
 <script>

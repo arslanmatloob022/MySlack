@@ -57,25 +57,25 @@
     </p>
     <div class="nav-bar-comp-logos u-text--center">
       <div class="row first-section-companies__logos">
-        <div class="col-lg-1.5 col-md-4 col-sm-4 col-4 logos-bar">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-4 logos-bar">
           <img src="../images/Logos/Airbnb.png" alt="Air BnB" />
         </div>
-        <div class="col-lg-1.5 col-md-4 col-sm-4 col-4 logos-bar">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-4 logos-bar">
           <img src="../images/Logos/AdobePS.png" alt="Adobe PhotoShop" />
         </div>
-        <div class="col-lg-1.5 col-md-4 col-sm-4 col-4 logos-bar">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-4 logos-bar">
           <img src="../images/Logos/NASA.png" alt="NASA" />
         </div>
-        <div class="col-lg-1.5 col-md-4 col-sm-4 col-4 logos-bar">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-4 logos-bar">
           <img src="../images/Logos/etsy.png" alt="Etsy" />
         </div>
-        <div class="col-lg-1.5 col-md-4 col-sm-4 col-4 logos-bar">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-4 logos-bar">
           <img
             src="../images/Logos/newyorktimes.png"
             alt="The New York Times"
           />
         </div>
-        <div class="col-lg-1.5 col-md-4 col-sm-4 col-4 logos-bar">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-4 logos-bar">
           <img src="../images/Logos/uber.png" alt="Uber" />
         </div>
       </div>
