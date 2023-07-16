@@ -211,6 +211,7 @@ export default {
 <style scoped>
 /*purple landing section*/
 .purple-section {
+  margin-top: 69px;
   display: flex;
   align-items: center;
 }

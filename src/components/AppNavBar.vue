@@ -1,7 +1,11 @@
 <template>
   <nav
-    class="row navbar navbar-expand-md navbar-dark"
-    :class="{ show: isMenuOpen, exapanded: isNavbarExpanded }"
+    class="row scrolled navbar navbar-expand-md navbar-dark"
+    :class="{
+      show: isMenuOpen,
+      exapanded: isNavbarExpanded,
+      scrolled: isScrolled,
+    }"
   >
     <a class="col-lg-2 col-sm-4 col-4 logo-nav">
       <img
@@ -74,6 +78,7 @@
       <i class="uil uil-bars"></i>
     </button>
   </nav>
+  <div id="mapSection"></div>
 </template>
 
 <script>
@@ -91,7 +96,16 @@ export default {
       Featuresarrow: "&#11167;",
       Solutionsarrow: "&#11167;",
       Resourcesarrow: "&#11167;",
+      isScrolled: false,
+      targetElement: null,
     };
+  },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+    this.targetElement = document.getElementById("mapSection");
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
     toggleMenu() {
@@ -114,6 +128,9 @@ export default {
         ? "&#11165;"
         : "&#11167;";
     },
+    handleScroll() {
+      this.isScrolled = window.pageYOffset > 0;
+    },
   },
 };
 </script>
@@ -125,7 +142,12 @@ export default {
   align-items: center;
   height: 70px;
 }
-
+.scrolled {
+  width: 100%;
+  margin: 0;
+  position: fixed;
+  z-index: 1000;
+}
 .logo-nav {
   cursor: pointer;
   text-decoration: none;
