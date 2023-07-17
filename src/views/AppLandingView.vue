@@ -85,6 +85,7 @@
   <section class="second-section section-background-hec">
     <div class="row content section-data">
       <video
+        preload
         autoplay
         loop
         class="col-12 col-sm-12 col-md-12 col-lg-6"
@@ -137,6 +138,7 @@
         </p>
       </div>
       <video
+        preload
         autoplay
         loop
         class="col-12 col-sm-12 col-md-12 col-lg-6"
@@ -151,6 +153,7 @@
   <section class="second-section section-background-hec">
     <div class="row content section-data">
       <video
+        preload
         autoplay
         loop
         class="col-12 col-sm-12 col-md-12 col-lg-6"
