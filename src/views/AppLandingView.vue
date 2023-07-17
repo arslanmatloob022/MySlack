@@ -88,7 +88,7 @@
         autoplay
         loop
         class="col-12 col-sm-12 col-md-12 col-lg-6"
-        style="float:left width:100%; height:400px"
+        style="margin-left: 0; width: 100%; height: 100%; margin: 20px 0px"
       >
         <source src="../images/videos/slackMovefaster.mp4" type="video/mp4" />
         <source src="../images/videos/slackMovefaster.webm" type="video/webm" />
@@ -140,7 +140,13 @@
         autoplay
         loop
         class="col-12 col-sm-12 col-md-12 col-lg-6"
-        style="float:left width:100%; height:400px"
+        style="
+          float: right;
+          margin-right: 0;
+          width: 100%;
+          height: 100%;
+          margin: 20px 0px;
+        "
       >
         <source src="../images/videos/slackChoose.webm" type="video/webm" />
         <source src="../images/videos/slackChoose.mp4" type="video/mp4" />
@@ -154,7 +160,7 @@
         autoplay
         loop
         class="col-12 col-sm-12 col-md-12 col-lg-6"
-        style="float:left width:100%; height:400px"
+        style="margin-left: 0; width: 100%; height: 100%; margin: 20px 0px"
       >
         <source src="../images/videos/slackPromovideo.webm" type="video/webm" />
         <source src="../images/videos/slackPromovideo.mp4" type="video/mp4" />
@@ -209,8 +215,6 @@ export default {
 };
 </script>
 <style scoped>
-.section-data video {
-}
 /*purple landing section*/
 .purple-section {
   margin-top: 69px;
