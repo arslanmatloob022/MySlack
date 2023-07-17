@@ -148,8 +148,8 @@
           margin: 20px 0px;
         "
       >
-        <source src="../images/videos/slackChoose.webm" type="video/webm" />
         <source src="../images/videos/slackChoose.mp4" type="video/mp4" />
+        <source src="../images/videos/slackChoose.webm" type="video/webm" />
       </video>
     </div>
   </section>
@@ -162,8 +162,8 @@
         class="col-12 col-sm-12 col-md-12 col-lg-6"
         style="margin-left: 0; width: 100%; height: 100%; margin: 20px 0px"
       >
-        <source src="../images/videos/slackPromovideo.webm" type="video/webm" />
         <source src="../images/videos/slackPromovideo.mp4" type="video/mp4" />
+        <source src="../images/videos/slackPromovideo.webm" type="video/webm" />
       </video>
       <div class="col-12 col-sm-12 col-md-12 col-lg-6 section-text">
         <h1 class="animated-text">Bring your team together</h1>

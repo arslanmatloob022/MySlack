@@ -39,12 +39,12 @@
     <div class="row content section-data">
       <video autoplay loop class="col-12 col-sm-12 col-md-12 col-lg-6">
         <source
-          src="../images/videos/slackfeaturingclients.webm"
-          type="video/webm"
-        />
-        <source
           src="../images/videos/slackfeaturingclients.mp4"
           type="video/mp4"
+        />
+        <source
+          src="../images/videos/slackfeaturingclients.webm"
+          type="video/webm"
         />
       </video>
       <div class="col-12 col-sm-12 col-md-12 col-lg-6 section-text">
