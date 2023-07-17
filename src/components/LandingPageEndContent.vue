@@ -43,8 +43,8 @@
           type="video/webm"
         />
         <source
-          src="../images/videos/slackfeaturingclients.webm"
-          type="video/webm"
+          src="../images/videos/slackfeaturingclients.mp4"
+          type="video/mp4"
         />
       </video>
       <div class="col-12 col-sm-12 col-md-12 col-lg-6 section-text">
@@ -197,8 +197,11 @@ export default {
   font-family: "Times New Roman", Times, serif;
 }
 .content video {
+  margin-top: 20px;
+  margin-bottom: 20px;
   height: 100%;
   float: left;
+  margin-left: 0;
   width: 100%;
   border-radius: 0px 200px 200px 0px;
 }

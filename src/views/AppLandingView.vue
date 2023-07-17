@@ -85,13 +85,12 @@
   <section class="second-section section-background-hec">
     <div class="row content section-data">
       <video
-        preload
         autoplay
         loop
         class="col-12 col-sm-12 col-md-12 col-lg-6"
         style="float:left width:100%; height:400px"
       >
-        <source src="../images/videos/slackMovefaster.webm" type="video/webm" />
+        <source src="../images/videos/slackMovefaster.mp4" type="video/mp4" />
         <source src="../images/videos/slackMovefaster.webm" type="video/webm" />
       </video>
       <div class="col-12 col-sm-12 col-md-12 col-lg-6 section-text">
@@ -138,14 +137,13 @@
         </p>
       </div>
       <video
-        preload
         autoplay
         loop
         class="col-12 col-sm-12 col-md-12 col-lg-6"
         style="float:left width:100%; height:400px"
       >
         <source src="../images/videos/slackChoose.webm" type="video/webm" />
-        <source src="../images/videos/slackChoose.webm" type="video/webm" />
+        <source src="../images/videos/slackChoose.mp4" type="video/mp4" />
       </video>
     </div>
   </section>
@@ -153,14 +151,13 @@
   <section class="second-section section-background-hec">
     <div class="row content section-data">
       <video
-        preload
         autoplay
         loop
         class="col-12 col-sm-12 col-md-12 col-lg-6"
         style="float:left width:100%; height:400px"
       >
         <source src="../images/videos/slackPromovideo.webm" type="video/webm" />
-        <source src="../images/videos/slackPromovideo.webm" type="video/webm" />
+        <source src="../images/videos/slackPromovideo.mp4" type="video/mp4" />
       </video>
       <div class="col-12 col-sm-12 col-md-12 col-lg-6 section-text">
         <h1 class="animated-text">Bring your team together</h1>
@@ -212,6 +209,8 @@ export default {
 };
 </script>
 <style scoped>
+.section-data video {
+}
 /*purple landing section*/
 .purple-section {
   margin-top: 69px;
