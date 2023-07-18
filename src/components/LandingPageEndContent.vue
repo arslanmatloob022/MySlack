@@ -37,7 +37,13 @@
   </section>
   <section class="second-section section-background-hec">
     <div class="row content section-data">
-      <video autoplay loop class="col-12 col-sm-12 col-md-12 col-lg-6">
+      <video
+        autoplay
+        playsinline
+        loop
+        role="img"
+        class="col-12 col-sm-12 col-md-12 col-lg-6"
+      >
         <source
           src="../images/videos/slackfeaturingclients.mp4"
           type="video/mp4"
