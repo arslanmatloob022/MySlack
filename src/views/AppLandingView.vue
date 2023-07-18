@@ -359,7 +359,7 @@ export default {
   margin-top: 20px;
 }
 .u-text--center {
-  margin-top: 5px;
+  margin-top: 15px;
   text-align: center !important;
 }
 p {
@@ -378,12 +378,12 @@ p {
   align-items: center;
 }
 .first-section-companies__logos .logos-bar {
-  max-width: unset;
+  height: auto;
   display: flex;
 }
 .first-section-companies__logos .logos-bar img {
-  width: 100%;
-  height: 40px;
+  width: 80%;
+  height: 80%;
 }
 @media screen and (min-width: 25rem) {
   .display-as-subnav {
