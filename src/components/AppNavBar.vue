@@ -115,11 +115,27 @@
                 </div>
 
                 <!-- Fourth  MAster column -->
-                <div
-                  class="dropdown-list col-lg-3 col-md-4 col-sm-6 col-4 master-column"
-                >
-                  <div class="row link-tab">
-                    <h6 class="master-heading">Features</h6>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-4 master-column">
+                  <div class="row master-content">
+                    <h5
+                      class="col-lg-12 col-md-12 col-sm-12 col-12 master-heading"
+                    >
+                      Features
+                    </h5>
+                    <div
+                      class="col-lg-12 col-md-12 col-sm-12 col-12 feature-image"
+                    >
+                      <img
+                        src="../images/images/aifeatures.jpg"
+                        alt="Features"
+                      />
+                      <div
+                        class="ai-feature-heading col-lg-12 col-md-12 col-sm-12 col-12"
+                      >
+                        <h6>Slack GPT: A new day for work, powered by AI</h6>
+                        <a href="#">Read Announcement</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -215,6 +231,8 @@ export default {
     },
     closeDropdown() {
       this.isDropdownOpen = false;
+      this.showFeaturesDropdown = !this.showFeaturesDropdown;
+      this.Featuresarrow = this.showFeaturesDropdown ? "&#11165;" : "&#11167;";
     },
     toggleSolutionsDropdown() {
       this.showSolutionsDropdown = !this.showSolutionsDropdown;
@@ -250,7 +268,6 @@ export default {
   display: grid;
   gap: 10px;
   padding: 10px;
-  backdrop-filter: blur(10px);
 }
 .dropdown {
   width: 100%;
@@ -261,12 +278,42 @@ export default {
 }
 */
 
+/* Features Column / MAster column*/
 .master-column {
+  border-radius: 4px;
+  width: 100%;
   background-color: #f4ede4;
+}
+.master-content {
+  width: 115%;
+}
+.master-heading {
+  margin-top: 8px;
+  font-weight: bold;
+  color: purple;
+}
+.feature-image {
+  width: 100%;
+}
+.feature-image img {
+  width: 100%;
+  height: 40%;
+}
+.master-link-tab {
+  margin-top: 12px;
+}
+.ai-feature-heading {
+  margin-top: 10px;
+}
+.ai-feature-heading h5 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.ai-feature-heading a {
+  text-decoration: none;
 }
 .link-tab:hover {
   /*background-color: #fcf7f1;*/
-  transform: scaleY(1.06);
+  transform: scaleY(1.03);
   /* border-radius: 6px;
   box-shadow: 0 0 1px 1px rgba(100, 95, 95, 0.7);*/
   transition: all 0.1s;
