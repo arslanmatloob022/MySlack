@@ -17,10 +17,10 @@ import LandingPageEndContent from "./components/LandingPageEndContent.vue";
 import AppFooter from "./components/AppFooter.vue";
 export default {
   components: {
-    LandingPageEndContent,
+    // LandingPageEndContent,
     AppNavBar,
-    AppLandingView,
-    AppFooter,
+    // AppLandingView,
+    // AppFooter,
   },
 };
 </script>

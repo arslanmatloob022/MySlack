@@ -24,12 +24,108 @@
           <a
             class="nav-link"
             href="#"
+            ref="dropdownButton"
             @click="toggleFeaturesDropdown"
             :class="{ 'dropdown-button': true, active: showFeaturesDropdown }"
           >
             <p>Features<span class="arrow" v-html="Featuresarrow"></span></p>
           </a>
         </li>
+        <transition name="dropdown-slide">
+          <div
+            v-if="isDropdownOpen"
+            class="dropdown-menu"
+            @click="closeDropdown"
+            ref="dropdownMenu"
+          >
+            <div class="dropdown-content">
+              <div class="row dropdown">
+                <!-- First column -->
+                <div class="dropdown-list col-lg-3 col-md-4 col-sm-6 col-4">
+                  <div class="row link-tab">
+                    <a class="dropdown-link" href="">Channels</a>
+                    <p class="link-description-text">Focused project spaces</p>
+                  </div>
+                  <div class="row link-tab">
+                    <a class="dropdown-link" href="">Slack Connect</a>
+                    <p class="link-description-text">Shared partner channel</p>
+                  </div>
+                  <div class="row link-tab">
+                    <a class="dropdown-link" href="">Messaging</a>
+                    <p class="link-description-text">Organise team chat</p>
+                  </div>
+                  <div class="row link-tab">
+                    <a class="dropdown-link" href="">Huddles</a>
+                    <p class="link-description-text">Audio and video calls</p>
+                  </div>
+                  <div class="row link-tab">
+                    <a class="dropdown-link" href="">Clips</a>
+                    <p class="link-description-text">Record and share info</p>
+                  </div>
+                </div>
+
+                <!-- Second Column -->
+                <div class="dropdown-list col-lg-3 col-md-4 col-sm-6 col-4">
+                  <div class="row link-tab">
+                    <a class="dropdown-link" href="">Apps and Integerations</a>
+                    <p class="link-description-text">
+                      connect to other services
+                    </p>
+                  </div>
+                  <div class="row link-tab">
+                    <a class="dropdown-link" href="">Workflow Builders</a>
+                    <p class="link-description-text">
+                      Automate routine actions
+                    </p>
+                  </div>
+                  <div class="row link-tab">
+                    <a class="dropdown-link" href="">Search</a>
+                    <p class="link-description-text">Access shared knowledge</p>
+                  </div>
+                  <div class="row link-tab">
+                    <a class="dropdown-link" href="">File Sharing</a>
+                    <p class="link-description-text">See and share files</p>
+                  </div>
+                </div>
+
+                <!-- Third column -->
+                <div class="dropdown-list col-lg-3 col-md-4 col-sm-6 col-4">
+                  <div class="row link-tab">
+                    <a class="dropdown-link" href="">Security</a>
+                    <p class="link-description-text">Protect company data</p>
+                  </div>
+                  <div class="row link-tab">
+                    <a class="dropdown-link" href=""
+                      >Enterprise Key Management</a
+                    >
+                    <p class="link-description-text">
+                      Control visibility and access
+                    </p>
+                  </div>
+                  <div class="row link-tab">
+                    <a class="dropdown-link" href="">Slack Atlas</a>
+                    <p class="link-description-text">Profile and org charts</p>
+                  </div>
+                  <div class="row link-tab">
+                    <a class="dropdown-link" href="">Canvas</a>
+                    <p class="link-description-text">
+                      Text docs right in Slack
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Fourth  MAster column -->
+                <div
+                  class="dropdown-list col-lg-3 col-md-4 col-sm-6 col-4 master-column"
+                >
+                  <div class="row link-tab">
+                    <h6 class="master-heading">Features</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </transition>
         <li class="nav-item">
           <a
             class="nav-link"
@@ -89,6 +185,7 @@ export default {
   },
   data() {
     return {
+      isDropdownOpen: false,
       isMenuOpen: false,
       showDropdown: false,
       isNavbarExpanded: false,
@@ -112,8 +209,12 @@ export default {
       this.isNavbarExpanded = !this.isNavbarExpanded;
     },
     toggleFeaturesDropdown() {
+      this.isDropdownOpen = !this.isDropdownOpen;
       this.showFeaturesDropdown = !this.showFeaturesDropdown;
       this.Featuresarrow = this.showFeaturesDropdown ? "&#11165;" : "&#11167;";
+    },
+    closeDropdown() {
+      this.isDropdownOpen = false;
     },
     toggleSolutionsDropdown() {
       this.showSolutionsDropdown = !this.showSolutionsDropdown;
@@ -135,6 +236,84 @@ export default {
 </script>
 
 <style scoped>
+/* Dropdown styling */
+.dropdown-menu {
+  position: absolute;
+  border-radius: 10px;
+  display: inline-block;
+  z-index: 1000;
+  width: calc(120% + 1vw);
+}
+
+.dropdown-content {
+  border-radius: 16px;
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  backdrop-filter: blur(10px);
+}
+.dropdown {
+  width: 100%;
+  height: 100%;
+}
+/*
+.dropdown-list {
+}
+*/
+
+.master-column {
+  background-color: #f4ede4;
+}
+.link-tab:hover {
+  /*background-color: #fcf7f1;*/
+  transform: scaleY(1.06);
+  /* border-radius: 6px;
+  box-shadow: 0 0 1px 1px rgba(100, 95, 95, 0.7);*/
+  transition: all 0.1s;
+}
+.dropdown-link {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.dropdown-link:hover {
+  color: purple;
+}
+.link-description-text {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Dropdown Menu anmation*/
+.dropdown-slide-enter-active {
+  animation: slideDown 0.3s;
+}
+
+.dropdown-slide-leave-active {
+  animation: slideUp 0.3s;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+/* Navbar Styling*/
 .navbar {
   background-color: purple;
   display: flex;
