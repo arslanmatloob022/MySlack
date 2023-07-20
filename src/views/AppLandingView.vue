@@ -194,14 +194,17 @@
       </div>
     </div>
   </section>
+  <landing-page-end-content-vue></landing-page-end-content-vue>
 </template>
 
 <script>
 import TrySalesButtonsVue from "@/components/Buttons.vue/TrySalesButtons.vue";
+import LandingPageEndContentVue from "@/components/LandingPageEndContent.vue";
 export default {
   name: "AppLandingView",
   components: {
     TrySalesButtonsVue,
+    LandingPageEndContentVue,
   },
   data() {
     return {

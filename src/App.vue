@@ -1,7 +1,5 @@
 <template>
   <app-nav-bar></app-nav-bar>
-  <app-landing-view></app-landing-view>
-  <landing-page-end-content></landing-page-end-content>
 
   <!-- <nav>
     <router-link to="/">Home</router-link> |
@@ -12,14 +10,10 @@
 </template>
 <script>
 import AppNavBar from "./components/AppNavBar.vue";
-import AppLandingView from "./views/AppLandingView.vue";
-import LandingPageEndContent from "./components/LandingPageEndContent.vue";
 import AppFooter from "./components/AppFooter.vue";
 export default {
   components: {
-    LandingPageEndContent,
     AppNavBar,
-    AppLandingView,
     AppFooter,
   },
 };

@@ -13,7 +13,7 @@
         alt=""
         style="width: 40px; height: 40px"
       />
-      <h1>Slack</h1>
+      <h1 @click="setSelectedComponent('app-landing-view-vue')">Slack</h1>
     </a>
     <div
       class="col-lg-6 col-md-6 col-sm-6 col-6 collapse navbar-collapse"
@@ -259,11 +259,19 @@
             </div>
           </div>
         </transition>
+
+        <!-- Enterprise -->
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a
+            class="nav-link"
+            href="#"
+            @click="setSelectedComponent('enterprise-view')"
+          >
             <p>Enterprise</p>
           </a>
         </li>
+
+        <!-- Resources -->
         <li class="nav-item">
           <a
             class="nav-link"
@@ -385,17 +393,31 @@
       <i class="uil uil-bars"></i>
     </button>
   </nav>
+
+  <enterprise-view-vue
+    v-if="selectedComponent === 'enterprise-view'"
+  ></enterprise-view-vue>
+  <app-landing-view-vue
+    v-if="selectedComponent === 'app-landing-view-vue'"
+  ></app-landing-view-vue>
+  <!-- <component :is="selectedComponent"></component> -->
 </template>
 
 <script>
 import TrySalesButtonsVue from "./Buttons.vue/TrySalesButtons.vue";
+import AppLandingViewVue from "../views/AppLandingView.vue";
+import EnterpriseViewVue from "../views/EnterpriseView.vue";
 export default {
   name: "AppNavBar",
   components: {
     TrySalesButtonsVue,
+    AppLandingViewVue,
+    EnterpriseViewVue,
+    AppLandingViewVue,
   },
   data() {
     return {
+      selectedComponent: "app-landing-view-vue",
       isDropdownOpen: false,
       isSolutionDropdownOpen: false,
       isResourcesDropdownOpen: false,
@@ -472,6 +494,9 @@ export default {
     },
     handleScroll() {
       this.isScrolled = window.pageYOffset > 0;
+    },
+    setSelectedComponent(cmp) {
+      this.selectedComponent = cmp;
     },
   },
 };
