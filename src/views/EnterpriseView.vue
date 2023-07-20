@@ -92,7 +92,7 @@ export default {
   margin-top: 150px;
 }
 .text-content {
-  padding: calc(50px + 1vw);
+  padding-left: calc(50px + 1vw);
 }
 .data-heading {
   text-align: left;
@@ -106,15 +106,19 @@ export default {
   font-size: calc(12px + 1vw);
 }
 .slack-support {
+  margin-top: 10%;
   padding-left: calc(50px + 1vw);
 }
 .support-text {
+  color: black;
+  font-size: calc(7px + 1vw);
+  text-align: left;
 }
 .link-icon {
   text-align: left;
 }
 .link-icon i {
-  font-size: 22px;
+  font-size: calc(4px + 1vw);
   color: rgb(15, 15, 15);
 }
 .support-link {
