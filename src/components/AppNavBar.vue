@@ -41,7 +41,9 @@
             <div class="dropdown-content">
               <div class="row dropdown">
                 <!-- First column -->
-                <div class="dropdown-list col-lg-3 col-md-4 col-sm-6 col-4">
+                <div
+                  class="dropdown-list-firt col-lg-3 col-md-4 col-sm-6 col-4"
+                >
                   <div class="row link-tab">
                     <a class="dropdown-link" href="">Channels</a>
                     <p class="link-description-text">Focused project spaces</p>
@@ -152,6 +154,115 @@
             <p>Solutions<span class="arrow" v-html="Solutionsarrow"></span></p>
           </a>
         </li>
+        <transition name="dropdown-slide">
+          <div
+            v-if="isSolutionDropdownOpen"
+            class="dropdown-menu"
+            @click="closeSolutionDropdown"
+            ref="dropdownMenu"
+          >
+            <div class="dropdown-content">
+              <div class="row dropdown">
+                <!-- First column -->
+                <div
+                  class="dropdown-list-firt col-lg-3 col-md-4 col-sm-6 col-4"
+                >
+                  <div class="row link-tab-Heading">
+                    <p>BY DEPARTMENT</p>
+                  </div>
+                  <div class="row link-tab single-link">
+                    <a class="dropdown-link" href="">Engineering</a>
+                  </div>
+                  <div class="row link-tab single-link">
+                    <a class="dropdown-link" href="">IT</a>
+                  </div>
+                  <div class="row link-tab single-link">
+                    <a class="dropdown-link" href="">Customer Service</a>
+                  </div>
+                  <div class="row link-tab single-link">
+                    <a class="dropdown-link" href="">Sales</a>
+                  </div>
+                  <div class="row link-tab single-link">
+                    <a class="dropdown-link" href="">Project Management</a>
+                  </div>
+                  <div class="row link-tab single-link">
+                    <a class="dropdown-link" href="">Marketing</a>
+                  </div>
+                  <div class="row link-tab single-link">
+                    <a class="dropdown-link" href="">Humen Resources</a>
+                  </div>
+                  <div class="row link-tab single-link">
+                    <a class="dropdown-link" href="">Security</a>
+                  </div>
+                </div>
+
+                <!-- Second Column -->
+                <div class="dropdown-list col-lg-3 col-md-4 col-sm-6 col-4">
+                  <div class="row link-tab-Heading">
+                    <p>BY INDUSTRY</p>
+                  </div>
+                  <div class="row link-tab single-link">
+                    <a class="dropdown-link" href="">Technology</a>
+                  </div>
+                  <div class="row link-tab single-link">
+                    <a class="dropdown-link" href="">Media</a>
+                  </div>
+                  <div class="row link-tab single-link">
+                    <a class="dropdown-link" href="">Small Business</a>
+                  </div>
+                  <div class="row link-tab single-link">
+                    <a class="dropdown-link" href="">Financial Services</a>
+                  </div>
+                  <div class="row link-tab single-link">
+                    <a class="dropdown-link" href="">Retail</a>
+                  </div>
+                  <div class="row link-tab single-link">
+                    <a class="dropdown-link" href="">Public Sector</a>
+                  </div>
+                  <div class="row link-tab single-link">
+                    <a class="dropdown-link" href="">Education</a>
+                  </div>
+                </div>
+
+                <!-- Third column -->
+                <div
+                  class="dropdown-list col-lg-3 col-md-4 col-sm-6 col-4"
+                ></div>
+
+                <!-- Fourth  MAster column -->
+                <div class="col-lg-3 col-md-4 col-sm-6 col-4 master-column">
+                  <div class="row master-content">
+                    <h5
+                      class="col-lg-12 col-md-12 col-sm-12 col-12 master-heading"
+                    >
+                      Features
+                    </h5>
+                    <div
+                      class="col-lg-12 col-md-12 col-sm-12 col-12 feature-image"
+                    >
+                      <img
+                        src="../images/images/aifeatures.jpg"
+                        alt="Features"
+                      />
+                      <div
+                        class="ai-feature-heading col-lg-12 col-md-12 col-sm-12 col-12"
+                      >
+                        <h6>Slack GPT: A new day for work, powered by AI</h6>
+                        <a href="#">Read Announcement</a>
+                      </div>
+                    </div>
+                    <div class="row link-tab single-link">
+                      <a class="dropdown-link" href="">Slack vs. Email</a>
+                    </div>
+                    <div class="row link-tab single-link">
+                      <a class="dropdown-link" href="">Why Slack?</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </transition>
         <li class="nav-item">
           <a class="nav-link" href="#">
             <p>Enterprise</p>
@@ -167,6 +278,96 @@
             <p>Resources<span class="arrow" v-html="Resourcesarrow"></span></p>
           </a>
         </li>
+        <transition name="dropdown-slide">
+          <div
+            v-if="isResourcesDropdownOpen"
+            class="dropdown-menu"
+            @click="closeResourcesDropdown"
+            ref="dropdownMenu"
+          >
+            <div class="dropdown-content">
+              <div class="row dropdown">
+                <!-- First column -->
+                <div
+                  class="dropdown-list-firt col-lg-3 col-md-4 col-sm-6 col-4"
+                >
+                  <div class="row link-tab single-link">
+                    <a class="dropdown-link" href="">Resources Library</a>
+                  </div>
+                  <div class="row link-tab single-link">
+                    <a class="dropdown-link" href="">Events</a>
+                  </div>
+                  <div class="row link-tab single-link">
+                    <a class="dropdown-link" href="">Customer Stories</a>
+                  </div>
+                  <div class="row link-tab single-link">
+                    <a class="dropdown-link" href="">Blog</a>
+                  </div>
+                  <div class="row link-tab single-link">
+                    <a class="dropdown-link" href="">Clips</a>
+                  </div>
+                </div>
+
+                <!-- Second Column -->
+                <div class="dropdown-list col-lg-3 col-md-4 col-sm-6 col-4">
+                  <div class="row link-tab single-link">
+                    <a class="dropdown-link" href="">What's New</a>
+                  </div>
+                  <div class="row link-tab single-link">
+                    <a class="dropdown-link" href="">Developers</a>
+                  </div>
+                  <div class="row link-tab single-link">
+                    <a class="dropdown-link" href="">Community</a>
+                  </div>
+                  <div class="row link-tab single-link">
+                    <a class="dropdown-link" href="">App Direcotry</a>
+                  </div>
+                </div>
+
+                <!-- Third column -->
+                <div class="dropdown-list col-lg-3 col-md-4 col-sm-6 col-4">
+                  <div class="row link-tab single-link">
+                    <a class="dropdown-link" href="">Watch the Demo</a>
+                  </div>
+                  <div class="row link-tab single-link">
+                    <a class="dropdown-link" href="">Partners</a>
+                  </div>
+                  <div class="row link-tab single-link">
+                    <a class="dropdown-link" href="">Slack Certified</a>
+                  </div>
+                </div>
+
+                <!-- Fourth  MAster column -->
+                <div class="col-lg-3 col-md-4 col-sm-6 col-4 master-column">
+                  <div class="row master-content">
+                    <h5
+                      class="col-lg-12 col-md-12 col-sm-12 col-12 master-heading"
+                    >
+                      Features
+                    </h5>
+                    <div
+                      class="col-lg-12 col-md-12 col-sm-12 col-12 feature-image"
+                    >
+                      <img
+                        src="../images/images/aifeatures.jpg"
+                        alt="Features"
+                      />
+                      <div
+                        class="ai-feature-heading col-lg-12 col-md-12 col-sm-12 col-12"
+                      >
+                        <h6>Slack GPT: A new day for work, powered by AI</h6>
+                        <a href="#">Read Announcement</a>
+                      </div>
+                      <div class="row link-tab single-link">
+                        <a class="dropdown-link" href="">Slack vs. Email</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </transition>
         <li class="nav-item">
           <a class="nav-link" href="#">
             <p>Pricing</p>
@@ -202,6 +403,8 @@ export default {
   data() {
     return {
       isDropdownOpen: false,
+      isSolutionDropdownOpen: false,
+      isResourcesDropdownOpen: false,
       isMenuOpen: false,
       showDropdown: false,
       isNavbarExpanded: false,
@@ -224,7 +427,11 @@ export default {
       this.isMenuOpen = !this.isMenuOpen;
       this.isNavbarExpanded = !this.isNavbarExpanded;
     },
+
+    // Features Dropdown Menu
     toggleFeaturesDropdown() {
+      this.isSolutionDropdownOpen = false;
+      this.isResourcesDropdownOpen = false;
       this.isDropdownOpen = !this.isDropdownOpen;
       this.showFeaturesDropdown = !this.showFeaturesDropdown;
       this.Featuresarrow = this.showFeaturesDropdown ? "&#11165;" : "&#11167;";
@@ -234,15 +441,38 @@ export default {
       this.showFeaturesDropdown = !this.showFeaturesDropdown;
       this.Featuresarrow = this.showFeaturesDropdown ? "&#11165;" : "&#11167;";
     },
+
+    // Solutions Dropdown
     toggleSolutionsDropdown() {
+      this.isDropdownOpen = false;
+      this.isResourcesDropdownOpen = false;
+      this.isSolutionDropdownOpen = !this.isSolutionDropdownOpen;
       this.showSolutionsDropdown = !this.showSolutionsDropdown;
       this.Solutionsarrow = this.showSolutionsDropdown
         ? "&#11165;"
         : "&#11167;";
     },
+    closeSolutionDropdown() {
+      this.isSolutionDropdownOpen = false;
+      this.showSolutionsDropdown = !this.showSolutionsDropdown;
+      this.Solutionsarrow = this.showSolutionsDropdown
+        ? "&#11165;"
+        : "&#11167;";
+    },
+
+    // Resources Dropdown methods
     toggleResourcesDropdown() {
+      (this.isDropdownOpen = false), (this.isSolutionDropdownOpen = false);
+      this.isResourcesDropdownOpen = !this.isResourcesDropdownOpen;
       this.showResourcesDropdown = !this.showResourcesDropdown;
       this.Resourcesarrow = this.showResourcesDropdown
+        ? "&#11165;"
+        : "&#11167;";
+    },
+    closeResourcesDropdown() {
+      this.isResourcesDropdownOpen = false;
+      this.showSolutionsDropdown = !this.showSolutionsDropdown;
+      this.Solutionsarrow = this.showSolutionsDropdown
         ? "&#11165;"
         : "&#11167;";
     },
@@ -267,16 +497,12 @@ export default {
   border-radius: 16px;
   display: grid;
   gap: 10px;
-  padding: 10px;
+  padding: 16px;
 }
 .dropdown {
   width: 100%;
   height: 100%;
 }
-/*
-.dropdown-list {
-}
-*/
 
 /* Features Column / MAster column*/
 .master-column {
@@ -318,9 +544,22 @@ export default {
   box-shadow: 0 0 1px 1px rgba(100, 95, 95, 0.7);*/
   transition: all 0.1s;
 }
+
+.single-link {
+  margin-top: 16px;
+}
+.link-tab-Heading p {
+  font-size: 18px;
+}
 .dropdown-link {
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.single-link .dropdown-link {
+  color: rgb(22, 21, 21);
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .dropdown-link:hover {
   color: purple;
@@ -433,20 +672,23 @@ export default {
   background-color: white;
 }
 @media (min-width: 768px) and (max-width: 1060px) {
-  .navbar-nav {
+  .nav-Buttons {
     display: none;
   }
-  .nav-Buttons {
+  .navbar-buttons i {
+    display: none;
+  }
+  .navbtn-signin {
     display: none;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .exapanded {
     height: 326px;
     transition: all 0.5s ease;
   }
-  .navbar .navbar-nav {
+  .menushow .navbar-nav {
     flex-direction: column;
   }
 
