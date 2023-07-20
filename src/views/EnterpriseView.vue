@@ -17,14 +17,8 @@
         class="col-lg-6 col-md-12 col-sm-12 col-12"
         style="float:left width:100%; height:500px"
       >
-        <source
-          src="../images/videos/EnterpriseVideos/Scale with Slack.mp4"
-          type="video/mp4"
-        />
-        <source
-          src="../images/videos/EnterpriseVideos/Scale with Slack.webm"
-          type="video/webm"
-        />
+        <source src="" type="video/mp4" />
+        <source src="" type="video/webm" />
       </video>
     </div>
   </section>
