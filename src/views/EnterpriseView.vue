@@ -12,9 +12,47 @@
           </p>
         </div>
         <div class="row slack-support">
-          <p class="col-lg-12 col-md-12 col-sm-12 col-12">
+          <p class="support-text col-lg-12 col-md-12 col-sm-12 col-12">
             Learn how Slack supports organizations of all sizes:
           </p>
+
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12 link-icon">
+            <i class="uil uil-check-circle"
+              ><span><a href="#" class="support-link">SCALE</a></span></i
+            >
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12 link-icon">
+            <i class="uil uil-check-circle"
+              ><span><a href="#" class="support-link">SCALE</a></span></i
+            >
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12 link-icon">
+            <i class="uil uil-check-circle"
+              ><span><a href="#" class="support-link">SEQURITY</a></span></i
+            >
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12 link-icon">
+            <i class="uil uil-check-circle"
+              ><span><a href="#" class="support-link">ENGAGEMENT</a></span></i
+            >
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12 link-icon">
+            <i class="uil uil-check-circle"
+              ><span><a href="#" class="support-link">PLATFORM</a></span></i
+            >
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12 link-icon">
+            <i class="uil uil-check-circle"
+              ><span
+                ><a href="#" class="support-link">SLACK CONNECT</a></span
+              ></i
+            >
+          </div>
         </div>
       </div>
 
@@ -68,5 +106,20 @@ export default {
   font-size: calc(12px + 1vw);
 }
 .slack-support {
+  padding-left: calc(50px + 1vw);
+}
+.support-text {
+}
+.link-icon {
+  text-align: left;
+}
+.link-icon i {
+  font-size: 22px;
+  color: rgb(15, 15, 15);
+}
+.support-link {
+  color: black;
+  text-decoration: underline;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 </style>
