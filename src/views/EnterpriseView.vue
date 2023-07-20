@@ -18,11 +18,11 @@
         style="float:left width:100%; height:500px"
       >
         <source
-          src="../images/videos/EnterpriseVideos/Scale_with_Slack.mp4"
+          src="../images/videos/EnterpriseVideos/Scale with Slack.mp4"
           type="video/mp4"
         />
         <source
-          src="../images/videos/EnterpriseVideos/Scale_with_Slack.webm"
+          src="../images/videos/EnterpriseVideos/Scale with Slack.webm"
           type="video/webm"
         />
       </video>
