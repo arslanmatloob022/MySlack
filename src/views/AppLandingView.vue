@@ -213,13 +213,11 @@ export default {
     };
   },
   mounted() {
-    // Simulate a click event on the document to allow autoplay
     document.addEventListener("click", this.allowAutoplay);
   },
 
   methods: {
     allowAutoplay() {
-      // Remove the click event listener and trigger a click on the document
       document.removeEventListener("click", this.allowAutoplay);
       document.documentElement.click();
     },

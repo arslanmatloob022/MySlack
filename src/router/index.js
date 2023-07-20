@@ -7,6 +7,11 @@ const routes = [
     name: "applandingview",
     component: () => import("../views/AppLandingView.vue"),
   },
+  {
+    path: "/EnterpriseView",
+    name: "EnterpriseView",
+    component: () => import("../views/EnterpriseView.vue"),
+  },
   // {
   //   path: '/',
   //   name: 'home',

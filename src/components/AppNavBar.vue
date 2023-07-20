@@ -41,7 +41,7 @@
             <div class="dropdown-content">
               <div class="row dropdown">
                 <!-- First column -->
-                <div class="dropdown-list col-lg-3 col-md-4 col-sm-6 col-4">
+                <div class="dropdown-list col-lg-3 col-md-6 col-sm-12 col-12">
                   <div class="row link-tab">
                     <a class="dropdown-link" href="">Channels</a>
                     <p class="link-description-text">Focused project spaces</p>
@@ -65,7 +65,7 @@
                 </div>
 
                 <!-- Second Column -->
-                <div class="dropdown-list col-lg-3 col-md-4 col-sm-6 col-4">
+                <div class="dropdown-list col-lg-3 col-md-6 col-sm-12 col-12">
                   <div class="row link-tab">
                     <a class="dropdown-link" href="">Apps and Integerations</a>
                     <p class="link-description-text">
@@ -89,7 +89,7 @@
                 </div>
 
                 <!-- Third column -->
-                <div class="dropdown-list col-lg-3 col-md-4 col-sm-6 col-4">
+                <div class="dropdown-list col-lg-3 col-md-6 col-sm-12 col-12">
                   <div class="row link-tab">
                     <a class="dropdown-link" href="">Security</a>
                     <p class="link-description-text">Protect company data</p>
@@ -115,7 +115,7 @@
                 </div>
 
                 <!-- Fourth  MAster column -->
-                <div class="col-lg-3 col-md-4 col-sm-6 col-4 master-column">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12 master-column">
                   <div class="row master-content">
                     <h5
                       class="col-lg-12 col-md-12 col-sm-12 col-12 master-heading"
@@ -162,7 +162,7 @@
             <div class="dropdown-content">
               <div class="row dropdown">
                 <!-- First column -->
-                <div class="dropdown-list col-lg-3 col-md-4 col-sm-6 col-4">
+                <div class="dropdown-list col-lg-3 col-md-6 col-sm-6 col-6">
                   <div class="row link-tab-Heading">
                     <p>BY DEPARTMENT</p>
                   </div>
@@ -193,7 +193,7 @@
                 </div>
 
                 <!-- Second Column -->
-                <div class="dropdown-list col-lg-3 col-md-4 col-sm-6 col-4">
+                <div class="dropdown-list col-lg-3 col-md-6 col-sm-6 col-6">
                   <div class="row link-tab-Heading">
                     <p>BY INDUSTRY</p>
                   </div>
@@ -222,11 +222,11 @@
 
                 <!-- Third column -->
                 <div
-                  class="dropdown-list col-lg-3 col-md-4 col-sm-6 col-4"
+                  class="dropdown-list col-lg-3 col-md-6 col-sm-6 col-6"
                 ></div>
 
                 <!-- Fourth  MAster column -->
-                <div class="col-lg-3 col-md-4 col-sm-6 col-4 master-column">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 master-column">
                   <div class="row master-content">
                     <h5
                       class="col-lg-12 col-md-12 col-sm-12 col-12 master-heading"
@@ -284,7 +284,7 @@
             <div class="dropdown-content">
               <div class="row dropdown">
                 <!-- First column -->
-                <div class="dropdown-list col-lg-3 col-md-4 col-sm-6 col-4">
+                <div class="dropdown-list col-lg-3 col-md-6 col-sm-6 col-6">
                   <div class="row link-tab single-link">
                     <a class="dropdown-link" href="">Resources Library</a>
                   </div>
@@ -303,7 +303,7 @@
                 </div>
 
                 <!-- Second Column -->
-                <div class="dropdown-list col-lg-3 col-md-4 col-sm-6 col-4">
+                <div class="dropdown-list col-lg-3 col-md-6 col-sm-6 col-6">
                   <div class="row link-tab single-link">
                     <a class="dropdown-link" href="">What's New</a>
                   </div>
@@ -319,7 +319,7 @@
                 </div>
 
                 <!-- Third column -->
-                <div class="dropdown-list col-lg-3 col-md-4 col-sm-6 col-4">
+                <div class="dropdown-list col-lg-3 col-md-6 col-sm-6 col-6">
                   <div class="row link-tab single-link">
                     <a class="dropdown-link" href="">Watch the Demo</a>
                   </div>
@@ -332,7 +332,7 @@
                 </div>
 
                 <!-- Fourth  MAster column -->
-                <div class="col-lg-3 col-md-4 col-sm-6 col-4 master-column">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 master-column">
                   <div class="row master-content">
                     <h5
                       class="col-lg-12 col-md-12 col-sm-12 col-12 master-heading"
@@ -480,7 +480,6 @@ export default {
 <style scoped>
 /* Dropdown styling */
 .dropdown-menu {
-  position: absolute;
   border-radius: 10px;
   display: inline-block;
   z-index: 1000;
@@ -492,6 +491,21 @@ export default {
   display: grid;
   gap: 10px;
   padding: 16px;
+}
+@media (max-width: 760px) {
+  .dropdown-menu {
+    margin-left: 0;
+    width: 190%;
+    height: 400px;
+    overflow: scroll;
+  }
+  .dropdown-content {
+    width: 100%;
+  }
+  .dropdown {
+    width: 100%;
+    height: 100%;
+  }
 }
 .dropdown {
   width: 100%;
