@@ -106,7 +106,7 @@ export default {
   font-size: calc(12px + 1vw);
 }
 .slack-support {
-  margin-top: 10%;
+  margin-top: 4%;
   padding-left: calc(50px + 1vw);
 }
 .support-text {
@@ -122,6 +122,7 @@ export default {
   color: rgb(15, 15, 15);
 }
 .support-link {
+  margin-left: 6px;
   color: black;
   text-decoration: underline;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
