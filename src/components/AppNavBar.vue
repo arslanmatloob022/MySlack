@@ -41,9 +41,7 @@
             <div class="dropdown-content">
               <div class="row dropdown">
                 <!-- First column -->
-                <div
-                  class="dropdown-list-firt col-lg-3 col-md-4 col-sm-6 col-4"
-                >
+                <div class="dropdown-list col-lg-3 col-md-4 col-sm-6 col-4">
                   <div class="row link-tab">
                     <a class="dropdown-link" href="">Channels</a>
                     <p class="link-description-text">Focused project spaces</p>
@@ -164,9 +162,7 @@
             <div class="dropdown-content">
               <div class="row dropdown">
                 <!-- First column -->
-                <div
-                  class="dropdown-list-firt col-lg-3 col-md-4 col-sm-6 col-4"
-                >
+                <div class="dropdown-list col-lg-3 col-md-4 col-sm-6 col-4">
                   <div class="row link-tab-Heading">
                     <p>BY DEPARTMENT</p>
                   </div>
@@ -288,9 +284,7 @@
             <div class="dropdown-content">
               <div class="row dropdown">
                 <!-- First column -->
-                <div
-                  class="dropdown-list-firt col-lg-3 col-md-4 col-sm-6 col-4"
-                >
+                <div class="dropdown-list col-lg-3 col-md-4 col-sm-6 col-4">
                   <div class="row link-tab single-link">
                     <a class="dropdown-link" href="">Resources Library</a>
                   </div>
@@ -503,7 +497,10 @@ export default {
   width: 100%;
   height: 100%;
 }
-
+.dropdown-list {
+  overflow: auto;
+  word-wrap: break-word;
+}
 /* Features Column / MAster column*/
 .master-column {
   border-radius: 4px;
@@ -558,7 +555,7 @@ export default {
 
 .single-link .dropdown-link {
   color: rgb(22, 21, 21);
-  font-size: 16px;
+  font-size: calc(2px + 1vw);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .dropdown-link:hover {

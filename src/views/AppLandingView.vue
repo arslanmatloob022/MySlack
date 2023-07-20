@@ -37,8 +37,8 @@
         </div>
       </div>
       <video
+        muted
         playsinline
-        role="img"
         autoplay
         loop
         class="col-12 col-sm-12 col-md-12 col-lg-6"
@@ -87,8 +87,8 @@
   <section class="second-section section-background-hec">
     <div class="row content section-data">
       <video
+        muted
         playsinline
-        role="img"
         autoplay
         loop
         class="col-12 col-sm-12 col-md-12 col-lg-6"
@@ -141,8 +141,8 @@
         </p>
       </div>
       <video
+        muted
         playsinline
-        role="img"
         autoplay
         loop
         class="col-12 col-sm-12 col-md-12 col-lg-6"
@@ -163,8 +163,8 @@
   <section class="second-section section-background-hec">
     <div class="row content section-data">
       <video
+        muted
         playsinline
-        role="img"
         autoplay
         loop
         class="col-12 col-sm-12 col-md-12 col-lg-6"
@@ -212,7 +212,17 @@ export default {
       },
     };
   },
+  mounted() {
+    // Simulate a click event on the document to allow autoplay
+    document.addEventListener("click", this.allowAutoplay);
+  },
+
   methods: {
+    allowAutoplay() {
+      // Remove the click event listener and trigger a click on the document
+      document.removeEventListener("click", this.allowAutoplay);
+      document.documentElement.click();
+    },
     startUnderlineAnimation(linkIndex) {
       this.animateUnderline[linkIndex] = true;
     },

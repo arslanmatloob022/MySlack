@@ -38,6 +38,7 @@
   <section class="second-section section-background-hec">
     <div class="row content section-data">
       <video
+        muted
         autoplay
         playsinline
         loop
