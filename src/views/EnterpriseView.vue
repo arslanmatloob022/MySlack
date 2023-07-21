@@ -1,4 +1,5 @@
 <template>
+  <!-- First Section (Build with enterprises) -->
   <section class="first-section enterprise-section">
     <div class="row section-data">
       <div class="col-lg-6 col-md-12 col-sm-12 col-12">
@@ -53,6 +54,12 @@
               ></i
             >
           </div>
+
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 contact-sales">
+              <contact-sales-button-vue></contact-sales-button-vue>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -74,10 +81,16 @@
       </video>
     </div>
   </section>
+
+  <!-- Second Section Scale-->
 </template>
 <script>
+import ContactSalesButtonVue from "@/components/Buttons.vue/ContactSalesButton.vue";
 export default {
   name: "EnterpriseView",
+  components: {
+    ContactSalesButtonVue,
+  },
 };
 </script>
 
@@ -103,15 +116,15 @@ export default {
 .sub-heading {
   text-align: left;
   font-family: "Franklin Gothi Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: calc(12px + 1vw);
+  font-size: calc(8px + 1vw);
 }
 .slack-support {
-  margin-top: 4%;
+  margin-top: 3%;
   padding-left: calc(50px + 1vw);
 }
 .support-text {
   color: black;
-  font-size: calc(7px + 1vw);
+  font-size: calc(6px + 1vw);
   text-align: left;
 }
 .link-icon {
@@ -126,5 +139,8 @@ export default {
   color: black;
   text-decoration: underline;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.contact-sales {
+  text-align: left;
 }
 </style>
