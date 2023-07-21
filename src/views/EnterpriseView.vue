@@ -396,16 +396,66 @@
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-12">
           <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-6 col-6">lets text</div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-6">lets text</div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-6">lets text</div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-4">
+              <img
+                class="platform-logo"
+                src="../images/Logos/gmail.png"
+                alt="Gmail"
+              />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-4">
+              <img
+                class="platform-logo"
+                src="../images/Logos/dropbox.png"
+                alt="dropbox"
+              />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-4">
+              <img
+                class="platform-logo"
+                src="../images/Logos/onedrive.png"
+                alt="OnDrive"
+              />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-4">
+              <img
+                class="platform-logo"
+                src="../images/Logos/salesforce.png"
+                alt="Sales-force"
+              />
+            </div>
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-12">
           <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-6 col-6">lets text</div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-6">lets text</div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-6">lets text</div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-4">
+              <img
+                class="platform-logo"
+                src="../images/Logos/google-drive.png"
+                alt="google-drive"
+              />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-4">
+              <img
+                class="platform-logo"
+                src="../images/Logos/outlook.png"
+                alt="outlook"
+              />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-4">
+              <img
+                class="platform-logo"
+                src="../images/Logos/zoom.png"
+                alt="zoom"
+              />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-4">
+              <img
+                class="platform-logo"
+                src="../images/Logos/service-now.png"
+                alt="service now"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -612,5 +662,9 @@ export default {
 }
 .what-says {
   text-align: left;
+}
+.platform-logo {
+  width: 70px;
+  height: 70px;
 }
 </style>
