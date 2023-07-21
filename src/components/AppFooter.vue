@@ -176,7 +176,7 @@ export default {
 .footerMenu {
   width: 100%;
   height: auto;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .footerLogo img {
   height: 60px;
