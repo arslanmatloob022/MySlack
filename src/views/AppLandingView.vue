@@ -2,7 +2,7 @@
   <!-- First Purple Section -->
   <section class="landing-section">
     <div class="row content section-data purple-section">
-      <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+      <div class="purple-sec-padding col-12 col-sm-12 col-md-12 col-lg-6">
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-12 landing-headings">
             <h1 class="first-heading">Made for people.</h1>
@@ -99,7 +99,7 @@
       </video>
       <div class="col-12 col-sm-12 col-md-12 col-lg-6 section-text">
         <h1 class="animated-text">Move faster with your tools in one place</h1>
-        <p class="animated-text quote-text">
+        <p class="quote animated-text quote-text">
           Automate away routine tasks with the power of generative AI and
           simplify your workflow with all your favorite apps ready to go in
           Slack
@@ -123,7 +123,7 @@
     <div class="row content section-data">
       <div class="col-12 col-sm-12 col-md-12 col-lg-6 section-text">
         <h1 class="animated-text">Choose how you want to work</h1>
-        <p class="animated-text quote-text">
+        <p class="quote animated-text quote-text">
           In Slack, you’ve got all the flexibility to work when, where and how
           it’s best for you. You can easily chat, send audio and video clips, or
           hop on a huddle to talk things out live.
@@ -175,7 +175,7 @@
       </video>
       <div class="col-12 col-sm-12 col-md-12 col-lg-6 section-text">
         <h1 class="animated-text">Bring your team together</h1>
-        <p class="animated-text quote-text">
+        <p class="quote animated-text quote-text">
           At the heart of Slack are channels: organized spaces for everyone and
           everything you need for work. In channels, it’s easier to connect
           across departments, offices, time zones and even other companies
@@ -239,6 +239,9 @@ export default {
   margin-top: 69px;
   display: flex;
   align-items: center;
+}
+.purple-sec-padding {
+  margin-top: 30px;
 }
 .landing-headings .first-heading {
   color: #f4ede4;
@@ -324,6 +327,7 @@ export default {
 }
 /* Link Text Animation*/
 .link-text {
+  font-size: calc(5px + 1vw);
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -426,6 +430,7 @@ p {
 
 /* Text Animatiions*/
 .quote-text {
+  font-size: calc(6px + 1vw);
   width: 100%;
   overflow: auto;
   word-wrap: break-word;
@@ -481,8 +486,9 @@ p {
 .section-text h1 {
   font-weight: bold;
 }
-.section-text p {
-  font-size: 18px;
+.section-text .quote {
+  padding: 20px;
+  font-size: calc(7px + 1vw);
   font: bold;
 }
 </style>
