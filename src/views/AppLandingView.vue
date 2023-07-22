@@ -333,6 +333,7 @@ export default {
   cursor: pointer;
   font-weight: bold;
   color: rgb(1, 116, 116);
+  text-align: left;
 }
 
 .underline {
@@ -487,6 +488,7 @@ p {
   font-weight: bold;
 }
 .section-text .quote {
+  text-align: left;
   padding: 20px;
   font-size: calc(7px + 1vw);
   font: bold;
