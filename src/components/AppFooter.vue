@@ -1,7 +1,7 @@
 <template>
   <section class="footerSection">
     <div class="footerTop">
-      <h1>See all you accomplish with Slack</h1>
+      <h1 class="footer-heading">See all you accomplish with Slack</h1>
       <div class="buttons">
         <try-sales-buttons class="trysalebtn"></try-sales-buttons>
       </div>
@@ -168,6 +168,10 @@ export default {
   margin-top: 40px;
   width: 30%;
 }
+.footer-heading {
+  text-align: center;
+  word-wrap: break-word;
+}
 .trysalebtn {
   width: 100%;
 }
@@ -188,6 +192,11 @@ export default {
 .menuText {
   margin-top: 10px;
   text-align: left;
+}
+@media (max-width: 667px) {
+  .menuText {
+    padding-left: 40px;
+  }
 }
 .menuText .row p {
   display: inline-block;

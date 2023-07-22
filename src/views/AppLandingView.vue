@@ -430,6 +430,11 @@ p {
   overflow: auto;
   word-wrap: break-word;
 }
+@media (max-width: 667px) {
+  .quote-text {
+    padding: 10%;
+  }
+}
 .animated-text {
   margin-top: 20px;
   animation: text-animation 3s;

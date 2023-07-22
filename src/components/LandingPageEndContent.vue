@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="row states">
-      <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-6">
         <div class="statesHeading">
           <h1>85%</h1>
           <p class="quote-texts">
@@ -19,7 +19,7 @@
           </p>
         </div>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-6">
         <div class="statesHeading">
           <h1>86%</h1>
           <p class="quote-texts">
@@ -150,15 +150,27 @@ export default {
   align-items: center;
   color: purple;
 }
-.statesHeading .quote-texts {
+.quote-texts {
   display: flexbox;
 }
+@media (max-width: 667px) {
+  .quote-texts {
+    padding: 10%;
+  }
+}
 .statesHeading h1 {
-  font-size: 66px;
+  font-size: calc(66px + 1vw);
   font-weight: 700;
+  cursor: default;
 }
 .clientDetail {
   overflow: auto;
+}
+@media (max-width: 667px) {
+  .clientDetail,
+  .link-text {
+    padding-left: 6%;
+  }
 }
 
 .clientDetail .name {
@@ -170,6 +182,7 @@ export default {
   float: left;
 }
 .link-text {
+  font-size: calc(12px + 1vw);
   float: left;
   position: relative;
   cursor: pointer;
