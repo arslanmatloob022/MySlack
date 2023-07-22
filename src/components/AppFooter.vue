@@ -1,9 +1,11 @@
 <template>
   <section class="footerSection">
-    <div class="footerTop">
+    <div class="row footerTop">
       <h1 class="footer-heading">See all you accomplish with Slack</h1>
-      <div class="buttons">
-        <try-sales-buttons class="trysalebtn"></try-sales-buttons>
+      <div class="row buttons">
+        <div class="col-lg-12 col-md-12col-sm-12 col-12">
+          <try-sales-buttons class="trysalebtn"></try-sales-buttons>
+        </div>
       </div>
     </div>
 

@@ -26,7 +26,6 @@
             href="#"
             ref="dropdownButton"
             @click="toggleFeaturesDropdown"
-            :class="{ 'dropdown-button': true, active: showFeaturesDropdown }"
           >
             <p>Features<span class="arrow" v-html="Featuresarrow"></span></p>
           </a>
@@ -143,12 +142,7 @@
           </div>
         </transition>
         <li class="nav-item">
-          <a
-            class="nav-link"
-            href="#"
-            @click="toggleSolutionsDropdown"
-            :class="{ 'dropdown-button': true, active: showSolutionsDropdown }"
-          >
+          <a class="nav-link" href="#" @click="toggleSolutionsDropdown">
             <p>Solutions<span class="arrow" v-html="Solutionsarrow"></span></p>
           </a>
         </li>
@@ -455,7 +449,6 @@ export default {
     closeDropdown() {
       this.isDropdownOpen = false;
       this.showFeaturesDropdown = !this.showFeaturesDropdown;
-      this.Featuresarrow = this.showFeaturesDropdown ? "&#11165;" : "&#11167;";
     },
 
     // Solutions Dropdown
@@ -471,9 +464,9 @@ export default {
     closeSolutionDropdown() {
       this.isSolutionDropdownOpen = false;
       this.showSolutionsDropdown = !this.showSolutionsDropdown;
-      this.Solutionsarrow = this.showSolutionsDropdown
-        ? "&#11165;"
-        : "&#11167;";
+      this.Solutionsarrow = this.isSolutionDropdownOpen
+        ? "&#11167;"
+        : "&#11165;";
     },
 
     // Resources Dropdown methods
@@ -488,9 +481,9 @@ export default {
     closeResourcesDropdown() {
       this.isResourcesDropdownOpen = false;
       this.showSolutionsDropdown = !this.showSolutionsDropdown;
-      this.Solutionsarrow = this.showSolutionsDropdown
-        ? "&#11165;"
-        : "&#11167;";
+      this.Resourcesarrow = this.isResourcesDropdownOpen
+        ? "&#11167;"
+        : "&#11165;";
     },
     handleScroll() {
       this.isScrolled = window.pageYOffset > 0;

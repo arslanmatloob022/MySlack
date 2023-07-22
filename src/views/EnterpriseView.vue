@@ -502,7 +502,24 @@
             >
           </div>
 
-          <div class="col-lg-12 col-md-12 col-sm-12 col-12"></div>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <p class="quote-text">
+              “Having all of the information about a specific partner available
+              at once is super-important. We have a direct line of communication
+              to our counterparts at the companies we work with most
+              frequently.”
+            </p>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <img
+                class="clients-logo"
+                src="../images/Logos/zendesk.png"
+                alt=""
+              />
+            </div>
+            <p class="client-intro col-lg-12 col-md-12 col-sm-12 col-12">
+              <b>Mike Yakovlev,</b>Manager of Technology Alliances
+            </p>
+          </div>
         </div>
       </div>
       <video
@@ -557,11 +574,11 @@ export default {
 }
 .clients-logo {
   float: left;
-  width: 150px;
-  height: 40px;
+  width: 130px;
+  height: 36px;
 }
 .fox {
-  width: 140px;
+  width: 120px;
 }
 .client-intro {
   font-size: 20px;
@@ -570,12 +587,6 @@ export default {
   text-align: left;
 }
 /*first section*/
-.first {
-}
-.second {
-}
-.enterprise-section {
-}
 .section-data {
   margin-bottom: 20px;
 }
@@ -664,7 +675,7 @@ export default {
   text-align: left;
 }
 .platform-logo {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
 }
 </style>

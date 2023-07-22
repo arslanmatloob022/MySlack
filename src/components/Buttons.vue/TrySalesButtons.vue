@@ -13,11 +13,11 @@ export default {
 .TrySalesBtn {
   display: flex;
   justify-content: space-evenly;
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 .TrySalesBtn button {
-  padding: 8px 12px;
+  padding: 8px 18px;
   border: 2px solid #f4ede4;
   border-radius: 5px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -34,13 +34,12 @@ export default {
   color: rgb(116, 1, 116);
   background-color: #f4ede4;
 }
-@media screen and (max-width: 767px) {
-  .TrySalesBtn .navButtons {
-    font-size: calc(0.875rem + (0 * (100vw - 400px) / 624));
-    padding-left: calc(0.975rem + (0 * (100vw - 400px) / 624));
-    padding-right: calc(0.975rem + (0 * (100vw - 400px) / 624));
-    padding-top: calc(0.675rem + (0 * (100vw - 400px) / 624));
-    padding-bottom: calc(0.675rem + (0 * (100vw - 400px) / 624));
+@media screen and (max-width: 667px) {
+  .TrySalesBtn button {
+    font-size: calc(3px + 1vw);
+    padding-left: calc(28px + 1vw);
+    padding-right: calc(28px + 1vw);
+    width: 160px;
   }
 }
 </style>
