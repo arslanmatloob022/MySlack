@@ -1,6 +1,4 @@
-<template>
-  <Button class="ContactSalesBtn">CONTACT SALES</Button>
-</template>
+<template><Button class="ContactSalesBtn">CONTACT Us</Button>></template>
 <script></script>
 <style>
 .ContactSalesBtn {
